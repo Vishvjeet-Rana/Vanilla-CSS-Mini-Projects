@@ -101,7 +101,7 @@ header {
 }
 
 .validity .text {
-  color: darkgray;
+  color: rgb(77, 75, 75);
 }
 
 .validity .date {
