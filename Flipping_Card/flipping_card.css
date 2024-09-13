@@ -107,3 +107,59 @@ header {
 .validity .date {
   font-size: 1.4rem;
 }
+
+.card-back {
+  height: 100%;
+  border-radius: 25px;
+  width: 100%;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.25);
+  border: none;
+  padding: 15px 20px 20px 20px;
+}
+
+.card-back h6 {
+  font-size: 10px;
+}
+
+.card-back .magnetic-strip {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  top: 40px;
+  left: 0;
+}
+
+.card-back .signature {
+  font-size: 1rem;
+  margin-top: 90px;
+  height: 45px;
+  border-radius: 7px;
+  width: 85%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: repeating-linear-gradient(
+    #fff,
+    #fff 3px,
+    #efefef 0px,
+    #efefef 9px
+  );
+}
+
+.signature i {
+  color: black;
+  padding: 4px 6px;
+  background-color: white;
+  border-radius: 0px 7px 7px 0px;
+  margin-right: -28px;
+  z-index: -1;
+}
+
+.card-back h5 {
+  font-size: 8px;
+  top: 100px;
+}
