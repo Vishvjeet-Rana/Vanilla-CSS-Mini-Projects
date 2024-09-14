@@ -62,7 +62,7 @@ body {
   border: 4px solid white;
 }
 
-/*important thing starts here about scrolling */
+/*important thing starts here about scrolling*/
 ::-webkit-scrollbar {
   height: 10px;
 }
