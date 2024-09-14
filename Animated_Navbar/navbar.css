@@ -32,6 +32,7 @@
   color: darkorchid;
   border-radius: 6px;
   cursor: pointer;
+  position: relative;
   z-index: 100;
 }
 
@@ -47,7 +48,7 @@
   height: 100%;
   width: 20%;
   position: absolute;
-  /* background-color: darkorchid; */
+  background-color: darkorchid;
   left: 0;
   top: 0;
   border-radius: 6px;
@@ -59,6 +60,34 @@
   align-items: center;
   height: 20px;
   width: 100px;
-  background-color: red;
   margin-bottom: 120px;
+  display: none;
+}
+
+#home:checked ~ .slider label,
+#blogs:checked ~ .slider label,
+#code:checked ~ .slider label,
+#help:checked ~ .slider label,
+#about:checked ~ .slider label {
+  color: white;
+}
+
+#home:checked ~ .slider {
+  transform: translateX(0%);
+}
+
+#blog:checked ~ .slider {
+  transform: translateX(20%);
+}
+
+#code:checked ~ .slider {
+  transform: translateX(40%);
+}
+
+#help:checked ~ .slider {
+  transform: translateX(60%);
+}
+
+#about:checked ~ .slider {
+  transform: translateX(80%);
 }
